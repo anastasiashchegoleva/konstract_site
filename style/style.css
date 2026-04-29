@@ -22,7 +22,6 @@ body{
 }
 
 .header{
-    width: 1440px;
     height: 768px;
     background-image: url("bg.png");
     text-align: center;
@@ -50,4 +49,49 @@ body{
     font-size: 16px;
     color: #fff;
     margin-top: 21px;
+}
+
+.navbar{
+    border: 1px solid #e6e6e6;
+    background: #fff;
+}
+
+.navbar_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    max-width: 941px;
+    margin-left: 251px;
+    margin-right: 250px;
+}
+
+.navbar_logo{
+    width: 79px;
+    height: 18px;
+}
+
+ul{
+    display: flex;
+    text-align: left;
+}
+
+a {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-align: center;
+    color: #48555b;
+    padding-left: 39px;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+a:hover{
+font-weight: 700;
+font-size: 12px;
+color: #00a4e5;
 }
