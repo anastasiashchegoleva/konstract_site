@@ -53,20 +53,20 @@ body{
 
 .navbar{
     border: 1px solid #e6e6e6;
-    height: 65px;
     background: #fff;
 }
 
 .navbar_inner{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 65px;
     max-width: 941px;
     margin-left: 251px;
     margin-right: 250px;
 }
 
 .navbar_logo{
-    margin-top: 10px;
     width: 79px;
     height: 18px;
 }
