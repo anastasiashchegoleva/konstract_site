@@ -245,10 +245,10 @@ button:hover{
     margin-top: 55px;
 }
 .cards_item{
-    padding: 38px 0px 39px 23px;
+    padding: 38px 10px 39px 23px;
     border: 1px solid #e6e6e6;
-    min-width: 295px;
-    min-height: 330px;
+    max-width: 295px;
+    max-height: 330px;
 }
 
 .cards_item > h4{
@@ -277,6 +277,76 @@ button:hover{
     cursor: pointer;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
+/*get_in_toutch*/
+.get_in_touch{
+    margin-top: 133px;
+    width: 1440px;
+    height: 499px;
+    background-image: url("get-in-touch.png")
+}
+
+.get_in_touch_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 98px;
+}
+
+.get_in_touch_text{
+    width: 350px;
+    height: 72px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #48555b;
+    margin-bottom: 35px;
+}
+
+/*newsletter*/
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 100px;
+    background-color: #171819;    
+    
+}
+
+.newsletter_inner{
+    width: 685px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.newsletter_inner > h3 {
+    width: 250px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.input{
+    border: 1px solid #979797;
+    min-width: 250px;
+    height: 40px;
+}
+
+
+
+
 
 
 
