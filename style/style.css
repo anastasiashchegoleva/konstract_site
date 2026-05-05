@@ -1,6 +1,7 @@
 :root {
   --font-family: "OpenSans", sans-serif;
   --second-family: "BebasNeueBold", sans-serif;
+  --color-white: #fff;
 }
 
 html {
@@ -39,7 +40,7 @@ body{
     font-weight: 400;
     font-size: 60px;
     letter-spacing: 0.1em;
-    color: #fff;
+    color: var(--color-white);
     text-transform: uppercase;
     margin-bottom: 0;
     
@@ -49,14 +50,14 @@ body{
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
-    color: #fff;
+    color: var(--color-white);
     margin-top: 0;
     padding-top: 6px;
 }
 
 .navbar{
     border: 1px solid #e6e6e6;
-    background: #fff;
+    background: var(--color-white);
 }
 
 .navbar_inner{
@@ -170,7 +171,7 @@ color: #00a4e5;
     font-size: 24px;
     line-height: 121%;
     letter-spacing: 0.01em;
-    color: #fff;
+    color: var(--color-white);
     padding-left: 14px;
     padding-top: 15px;
     text-transform: uppercase;
@@ -226,7 +227,7 @@ button{
     font-size: 13px;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
     border:none;
     cursor: pointer;
     text-transform: uppercase;
@@ -269,7 +270,7 @@ button:hover{
     font-weight: 400;
     font-size: 13px;
     line-height: 177%;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.045em;
     color: #48555b;
 }
 
@@ -313,8 +314,7 @@ button:hover{
     align-items: center;
     width: 1440px;
     height: 100px;
-    background-color: #171819;    
-    
+    background-color: #171819;     
 }
 
 .newsletter_inner{
@@ -332,7 +332,7 @@ button:hover{
     font-size: 22px;
     letter-spacing: 0.04em;
     text-align: left;
-    color: #fff;
+    color: var(--color-white);
     margin-top: 0;
     margin-bottom: 0;
     align-self: center;
@@ -344,6 +344,110 @@ button:hover{
     height: 40px;
 }
 
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #141A20;
+    height: 240px;
+}
+
+.footer_inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: auto;
+}
+
+.company{
+    width: 250px;
+    height: 148px;
+}
+
+.footer_h4{
+    margin-top: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--color-white);
+    text-transform: uppercase;
+
+}
+.company > img{
+    width: 101px;
+    height: 23px;   
+}
+
+.company > p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 173%;
+    letter-spacing: 0.08em;
+    color: var(--color-white);
+}
+
+.links{
+    width: 262px;
+    height: 150px;
+}
+
+.links_inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 227%;
+    letter-spacing: 0.08em;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.links_inner > ol{
+    padding: 0px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.contact_us{
+    width: 141px;
+    height: 158px;
+}
+
+.contact_us > p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.08em;
+    color: var(--color-white);
+}
+
+.icons{
+    width: 100px;
+    height: 100px;
+}
+
+/*copyright*/
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #171819;
+}
+
+.copyright > div {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--color-white);
+}
 
 
 
