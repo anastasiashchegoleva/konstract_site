@@ -1,7 +1,18 @@
 :root {
-  --font-family: "OpenSans", sans-serif;
-  --second-family: "BebasNeueBold", sans-serif;
+  --font-family: "OpenSans";
+  --second-family: "BebasNeue", sans-serif;
   --color-white: #fff;
+}
+
+@font-face {
+  font-weight: 700; /* Соответствует значению bold */
+  font-family: BebasNeue;
+  src: url("../fonts/ofont.ru_Bebas Neue.ttf");
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSansSemiBold.ttf");
 }
 
 html {
@@ -35,24 +46,24 @@ body{
 }
 
 .header_h1{
-    padding-top: 258px;
-    font-family: var(--second-family);
+    padding-top: 264px;
+    font-family: BebasNeue, sans-serif;
     font-weight: 400;
     font-size: 60px;
-    letter-spacing: 0.1em;
+    letter-spacing: 5.71px;
     color: var(--color-white);
     text-transform: uppercase;
     margin-bottom: 0;
+    padding-left: 10px;
     
 }
 
 .header_text{
-    font-family: var(--font-family);
+    font-family: OpenSans, sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: var(--color-white);
     margin-top: 0;
-    padding-top: 6px;
 }
 
 .navbar{
