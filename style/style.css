@@ -1,9 +1,3 @@
-:root {
-  --font-family: "OpenSans";
-  --second-family: "BebasNeue", sans-serif;
-  --color-white: #fff;
-}
-
 @font-face {
   font-weight: 700; /* Соответствует значению bold */
   font-family: BebasNeue;
@@ -14,6 +8,29 @@
   font-family: OpenSans;
   src: url("../fonts/OpenSansSemiBold.ttf");
 }
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url("../fonts/OpenSansBold.ttf");
+}
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url("../fonts/OpenSansRegular.ttf");
+}
+
+@font-face {
+  font-family: OpenSansExtraBold;
+  src: url("../fonts/OpenSansExtraBold.ttf");
+}
+
+:root {
+  --font-family: "OpenSans";
+  --second-family: "BebasNeue", sans-serif;
+  --color-white: #fff;
+}
+
+
 
 html {
     box-sizing: border-box;
@@ -103,10 +120,10 @@ ul{
 }
 
 a {
-    font-family: var(--font-family);
+    font-family: OpenSans;
     font-weight: 600;
     font-size: 12px;
-    letter-spacing: 0.09em;
+    letter-spacing: 1.09px;
     text-align: center;
     color: #48555b;
     padding-left: 35px;
@@ -125,7 +142,7 @@ color: #00a4e5;
 .about{
     margin-left: 250px;
     margin-right: 250px;
-    margin-top: 58px;
+    margin-top: 56px;
     width: 941px;
     height: 344px;
   
@@ -150,7 +167,7 @@ color: #00a4e5;
 }
 .about_inner {
     display: flex;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .text_inner{
@@ -160,35 +177,39 @@ color: #00a4e5;
 }
 
 .text_inner > h4 {
-    font-family: var(--font-family);
+    font-family: OpenSansBold;
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.01em;
     color: #48555b;
-    margin-top: 0;
+    margin-top: 2px;
+    max-width: 400px;
 }
 
-.text_inner > p{
-    font-family: var(--font-family);
+.text_inner > p {
+    font-family: OpenSansRegular;
     font-weight: 400;
     font-size: 13px;
     line-height: 177%;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.19px;
     color: #48555b;
     margin-bottom: 0;
+    margin-top: 4px;
+    max-width: 405px;
 }
 
 .img_inner{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding-left: 50px;
+    padding-left: 75px;
+    align-items: end;
 }
 
 .img_card {
     width: 140px;
     height: 224px;
-    font-family: var(--font-family);
+    font-family: OpenSansExtraBold;
     font-weight: 800;
     font-size: 24px;
     line-height: 121%;
@@ -201,7 +222,7 @@ color: #00a4e5;
 
 /*services*/
 .services{
-    margin-top: 98px;
+    margin-top: 100px;
     margin-left: 249px;
     margin-right: 250px;
     width: 940px;
@@ -209,45 +230,50 @@ color: #00a4e5;
 }
 
 .services_inner{
+    height: 103px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 31px;
 }
 
 .capabilities .divider{
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .capabilities > h3 {
-    font-family: var(--font-family);
-    font-weight: 700;
+    font-family: OpenSansBold;
     font-size: 18px;
-    letter-spacing: 0.13em;
+    letter-spacing: 2.31px;
     color: #48555b;
     text-transform: uppercase;
 }
 
-.capabilities_text{
-    display: flex;
-    align-items: center;
-    padding-left: 200px;
-}
-
 .capabilities_text > p {
-    font-family: var(--font-family);
-    font-weight: 400;
+    font-family: OpenSansRegular;
+    width: 490px;
     font-size: 11px;
-    line-height: 173%;
-    letter-spacing: 0.02em;
     color: #48555b;
+    margin-left: 50px;
+    letter-spacing: 0.2px;
+    line-height: 19px;
+    margin-top: 18px;
+    max-width: 405px;
+    max-height: 38px;
+    margin-left: 124px;;
 }
 
 button{
+    margin-top: 18px;
     min-width: 150px;
     height: 40px;
     background: #00a4e5;
-    font-family: var(--font-family);
+    font-family: OpenSansBold;
     font-weight: 700;
     font-size: 13px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em;;
     text-align: center;
     color: var(--color-white);
     border:none;
@@ -265,7 +291,6 @@ button:hover{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
-    margin-top: 55px;
 }
 .cards_item{
     padding: 38px 10px 39px 23px;
@@ -276,24 +301,27 @@ button:hover{
 
 .cards_item > h4{
     margin-top: 22px;
-    font-family: var(--font-family);
-    font-weight: 700;
+    font-family: OpenSansBold;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.43px;
     color: #48555b;
     text-transform: uppercase;
     margin-bottom: 0;
+    max-width: 250px;
+    min-height: 48px;
 }
 
 .cards_item > p{
     margin-top: 13px;
-    font-family: var(--font-family);
-    font-weight: 400;
+    font-family: OpenSansRegular;
     font-size: 13px;
     line-height: 177%;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.19px;
     color: #48555b;
+    max-width: 255px;
+    min-height: 92px;
+    
 }
 
 .cards_item:hover{
