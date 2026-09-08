@@ -532,10 +532,17 @@ li  a {
     color: var(--color-white);
 }
 
-@media (max-width: 1000px) {
-
+@media screen (max-width: 1440px) {
+    .container{
+        padding: 0 50px
+    }
 }
 
+@media screen (max-width: 1024px) {
+    .container{
+        padding: 0 10px;
+    }
+}
 
 
 
