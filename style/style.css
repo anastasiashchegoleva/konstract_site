@@ -35,8 +35,6 @@ ol, p {
     margin: 0;
 }
 
-
-
 html {
     box-sizing: border-box;
 }
@@ -153,8 +151,8 @@ color: #00a4e5;
 /* our story */
 .about{
     margin-top: 56px;
-    width: 941px;
-    height: 344px;
+    max-width: 941px;
+    min-height: 344px;
 }
 
 .about > h3 {
@@ -176,7 +174,7 @@ color: #00a4e5;
 }
 .about_inner {
     display: flex;
-    margin-top: 50px;
+    margin-top: 52px;
 }
 
 .text_inner{
@@ -232,12 +230,12 @@ color: #00a4e5;
 /*services*/
 .services{
     margin-top: 100px;
-    width: 940px;
+    max-width: 940px;
     height: 446px;
 }
 
 .services_inner{
-    height: 103px;
+    min-height: 103px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -344,12 +342,13 @@ button:hover{
 
 /*get_in_toutch*/
 .get_in_touch{
-    margin-top: 133px;
-    height: 498px;
+    margin-top: 131px;
+    height: 500px;
     background-image: url("/img/get-in-touch.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: black;
 }
 
 .get_in_touch_inner{
@@ -388,7 +387,6 @@ button:hover{
     justify-content: space-between; 
     font-size: 0;
 }
-
 
 .newsletter_inner > h3 {
     width: 260px;
@@ -531,31 +529,50 @@ li  a {
     font-family: OpenSansRegular;
     font-weight: 400;
     font-size: 11px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.85px;
     color: var(--color-white);
 }
 
 @media screen and (max-width: 1440px) {
     .container{
-        padding: 0 50px;
-    }
-    .container_inner{
-        margin:0;
-    }
+        margin: 0px;
+    }   
 }
 
-@media screen and (max-width: 1024px) {
-    .container{
-        padding: 0 10px;
+@media screen and (max-width: 1024px) { 
+    .about_inner{
+        flex-wrap: wrap;
     }
+    .services{
+        flex-wrap: wrap;
+    }
+    }
+
+@media screen and (max-width: 700px) {
     .container_inner{
-        margin:0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .header_h1{
+        font-size: 30px;
+    }
+    .about_inner{
+        flex-wrap: wrap;
+    }
+    .services{
+        flex-wrap: wrap;
+    }
+    .img_inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .capabilities_text > p{
+        margin-left: 20px;
+    }
+
+    .navbar_inner{
+        margin-left: 51px;
+        margin-right: 50px;
     }
 }
-
-
-
-
-
-
-
