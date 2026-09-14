@@ -242,9 +242,11 @@
     }
 
     button {
-        width: 100%;
+        width: 50%;
         max-width: 280px;
         height: 45px;
+        margin-top:20px;
+        
     }
 
     .cards_item {
