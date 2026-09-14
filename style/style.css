@@ -55,7 +55,7 @@ body{
 
 .header{
     height: 768px;
-    background-image: url("/img/bg.png");
+    background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -345,7 +345,7 @@ button:hover{
 .get_in_touch{
     margin-top: 131px;
     height: 500px;
-    background-image: url("/img/get-in-touch.png");
+    background-image: url("../img/get-in-touch.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -752,8 +752,8 @@ li  a {
     .newsletter_input > button {
         width: 35%;
         height: 100%;
-        min-width: auto; /* Сбрасываем десктопные 150px */
-        margin-top: 0;   /* Сбрасываем десктопный маргин в 18px, который ломал высоту */
+        min-width: auto; 
+        margin-top: 0;   
         font-size: 11px;
         padding: 0;
         background: #00a4e5;
@@ -822,21 +822,20 @@ li  a {
 
     .newsletter_input > input {
         width: 65%;   
-        height: 100%;       /* Инпут занимает большую часть */
+        height: 100%;       
         font-size: 14px;
         padding: 0 12px; 
         border: 1px solid #979797;
         border-right:none;
-        flex-grow:0;     /* Уменьшаем внутренние отступы, чтобы текст не сжимался */
+        flex-grow:0;   
     }
 
     .newsletter_input > button {
         width: 35%;  
-        height:auto;        /* Кнопка занимает остаток строки */
-        min-width: auto;     /* Сбрасываем ограничение минимальной ширины */
+        height:auto;       
+        min-width: auto;     
         font-size: 11px;
         padding:0;    
         border: 1px solid #00a4e5; 
     }
-
 }
