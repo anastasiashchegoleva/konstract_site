@@ -124,6 +124,7 @@ ul{
     display: flex;
     text-align: left;
     flex-wrap: wrap;
+    list-style: none;   
 }
 
 a {
@@ -135,7 +136,6 @@ a {
     color: #48555b;
     padding-left: 35px;
     text-transform: uppercase;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -239,7 +239,6 @@ color: #00a4e5;
 .services_inner{
     min-height: 103px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 31px;
@@ -403,8 +402,13 @@ button:hover{
     align-self: center;
 }
 
+.newsletter_input{
+    display:flex;
+    height:40px;
+}
 .newsletter_input > input {
     border: 1px solid #979797;
+    border-right: none;
     width: 250px;
     height: 40px;
     padding: 16px;
@@ -731,15 +735,29 @@ li  a {
 
     .newsletter_input {
         display: flex;
-        flex-direction: column;
-        gap: 10px;
         width: 100%;
-        align-items: center;
+        max-width: 400px; 
+        height: 40px;
+        padding: 0 15px;
     }
 
     .newsletter_input > input {
-        width: 100%;
-        max-width: 300px;
+        width: 65%;
+        height: 100%;
+        font-size: 14px;
+        padding: 0 12px;
+        border: 1px solid #979797;
+        border-right: none;
+    }
+    .newsletter_input > button {
+        width: 35%;
+        height: 100%;
+        min-width: auto; /* Сбрасываем десктопные 150px */
+        margin-top: 0;   /* Сбрасываем десктопный маргин в 18px, который ломал высоту */
+        font-size: 11px;
+        padding: 0;
+        background: #00a4e5;
+        border: 1px solid #00a4e5;
     }
 }
 @media screen and (max-width: 400px) {
@@ -794,4 +812,31 @@ li  a {
         height: auto;
         gap: 15px;
     }
+
+    .newsletter_input {
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        display:flex;
+    }
+
+    .newsletter_input > input {
+        width: 65%;   
+        height: 100%;       /* Инпут занимает большую часть */
+        font-size: 14px;
+        padding: 0 12px; 
+        border: 1px solid #979797;
+        border-right:none;
+        flex-grow:0;     /* Уменьшаем внутренние отступы, чтобы текст не сжимался */
+    }
+
+    .newsletter_input > button {
+        width: 35%;  
+        height:auto;        /* Кнопка занимает остаток строки */
+        min-width: auto;     /* Сбрасываем ограничение минимальной ширины */
+        font-size: 11px;
+        padding:0;    
+        border: 1px solid #00a4e5; 
+    }
+
 }
